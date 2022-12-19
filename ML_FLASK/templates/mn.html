@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет соотношения матрица-наполнитель</title>
+</head>
+<body>
+    <h1 style="color:#091294; font-family:Impact;">Расчет соотношения матрица-наполнитель</h1>
+    <form action="/" method="post">
+    <fieldset>
+        <legend>Введите параметры</legend>
+    <p>
+	    <label for="experience1">Введите Плотность, кг/м3</label>
+	    <input type="float" name="experience1" required>
+    </p><p>
+	    <label for="experience2">Введите Модуль упругости, ГПа</label>
+	    <input type="float" name="experience2" required>
+    </p><p>
+	    <label for="experience3">Введите Количество отвердителя, м.%</label>
+	    <input type="float" name="experience3" required>
+    </p><p>
+        <label for="experience4">Введите Содержание эпоксидных групп,%_2</label>
+	    <input type="float" name="experience4" required>
+    </p><p>
+        <label for="experience5">Введите Температура вспышки, С_2</label>
+	    <input type="float" name="experience5" required>
+    </p><p>
+        <label for="experience6">Введите Поверхностная плотность, г/м2</label>
+	    <input type="float" name="experience6" required>
+    </p><p>
+        <label for="experience7">Введите Модуль упругости при растяжении, ГПа</label>
+	    <input type="float" name="experience7" required>
+    </p><p>
+        <label for="experience8">Введите Прочность при растяжении, МПа</label>
+	    <input type="float" name="experience8" required>
+    </p><p>
+        <label for="experience9">Введите Потребление смолы, г/м2</label>
+	    <input type="float" name="experience9" required>
+    </p><p>
+        <label for="experience10">Введите Угол нашивки, град</label>
+	    <input type="float" name="experience10" min='0' max='90' step='1' required>
+    </p><p>
+        <label for="experience11">Введите Шаг нашивки</label>
+	    <input type="float" name="experience11" required>
+    </p><p>
+        <label for="experience12">Введите Плотность нашивки</label>
+	    <input type="float" name="experience12" required>
+	</p>
+    </fieldset>
+	<p>
+	    <input type="submit" value="Рассчитать">
+        <input type="reset">
+	</p>
+    </form>
+    <p>
+    {% if message %}
+        <p><b>{{message}}</b></p>
+    {% endif %}
+    </p>
+</body>
+<footer>
+    <p>
+        <a href="{{url_for('main')}}"><button>Вернуться на главную страницу</button></a>
+    </p>
+</footer>
+</html>
+<style type="text/css">body {
+    background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614376582_41-p-fon-dlya-prezentatsii-po-fizike-svetlii-46.jpg"); background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #ffffff; 
+   }
+</style>
